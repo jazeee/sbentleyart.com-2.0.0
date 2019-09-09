@@ -1,0 +1,13 @@
+.artPiece {
+  width: 100%;
+}
+
+.artPiece + .artPiece {
+  margin-top: 10px;
+}
+
+.media {
+  height: 256px;
+  background-size: contain;
+  background-color: #eee;
+}

@@ -1,0 +1,17 @@
+.mainArea {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 48px;
+  bottom: 0;
+  overflow: auto;
+  width: 100%;
+}
+
+.content {
+  flex: 1;
+}
+
+.footer {
+  color: #666;
+}

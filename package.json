@@ -1,0 +1,57 @@
+{
+  "name": "sbentleyart.com-website",
+  "private": true,
+  "description": "Sarah Bentley Website as served on http://sbentleyart.com",
+  "version": "2.0.0",
+  "author": "Jaz Singh",
+  "dependencies": {
+    "@material-ui/core": "^4.1.3",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/styles": "^4.1.2",
+    "babel-plugin-styled-components": "^1.10.6",
+    "gatsby": "^2.13.73",
+    "gatsby-cli": "^2.7.42",
+    "gatsby-image": "^2.2.10",
+    "gatsby-plugin-google-analytics": "^2.1.11",
+    "gatsby-plugin-lodash": "^3.1.0",
+    "gatsby-plugin-manifest": "^2.2.6",
+    "gatsby-plugin-material-ui": "^2.1.4",
+    "gatsby-plugin-offline": "3.0.1",
+    "gatsby-plugin-react-helmet": "^3.1.4",
+    "gatsby-plugin-sharp": "^2.2.13",
+    "gatsby-plugin-styled-components": "^3.1.0",
+    "gatsby-source-filesystem": "^2.1.19",
+    "gatsby-transformer-json": "^2.2.7",
+    "gatsby-transformer-sharp": "^2.2.7",
+    "lodash": "^4.17.11",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "keywords": [
+    "Sarah Bentley",
+    "Art",
+    "Profile site"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jazeee/sbentleyart.com-2.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/jazeee/sbentleyart.com-2.0.0/issues"
+  }
+}

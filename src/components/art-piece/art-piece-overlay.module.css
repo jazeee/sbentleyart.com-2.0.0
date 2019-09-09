@@ -1,0 +1,18 @@
+.overlayContainer {
+  position: relative;
+  margin: 0 0;
+}
+
+.leftButton {
+  position: absolute;
+  top: 96px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.rightButton {
+  position: absolute;
+  top: 96px;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
