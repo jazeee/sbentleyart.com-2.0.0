@@ -7,7 +7,7 @@ import { getImageUrl } from "./utils";
 export const ArtPieceCardMedia = props => {
   const { artPiece, height = 512, isHighRes = false } = props;
   const [imageIndex, setImageIndex] = useState(0);
-  const { name, imageFiles } = artPiece;
+  const { imageFiles } = artPiece;
   const imageUrl = getImageUrl(
     artPiece,
     imageIndex,
