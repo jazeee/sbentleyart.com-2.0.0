@@ -25,6 +25,7 @@ export const Galleries = props => {
   const { nodes } = data.allGalleriesJson;
   return (
     <Container className={classes.container}>
+      <Typography variant="h3" color="primary">Galleries</Typography>
       <Grid container spacing={2}>
         {nodes.map(node => {
           const { id, name, imageFile, description } = node;
