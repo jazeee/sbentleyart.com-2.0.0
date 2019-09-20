@@ -4,6 +4,7 @@ import { createMuiTheme } from "@material-ui/core/styles";
 // Also check `gatsby-config.js`
 export const PRIMARY_COLOR = "#666";
 export const SECONDARY_COLOR = "#0094FF";
+export const DEFAULT_COLOR = "#222";
 
 export const theme = createMuiTheme({
   palette: {
@@ -13,6 +14,9 @@ export const theme = createMuiTheme({
     secondary: {
       main: SECONDARY_COLOR,
     },
+    default: {
+      main: DEFAULT_COLOR,
+    },
     error: {
       main: red.A400,
     },
@@ -20,4 +24,9 @@ export const theme = createMuiTheme({
       default: "#000",
     },
   },
+  typography: {
+    subtitle: {
+      fontFamily: '"Helvetica Neue"',
+    }
+  }
 });

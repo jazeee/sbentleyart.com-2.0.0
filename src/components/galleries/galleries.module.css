@@ -1,0 +1,13 @@
+.container {
+  margin-top: 20px;
+}
+
+.cardContent {
+  min-height: 128px;
+}
+
+.media {
+  height: 256px;
+  background-size: contain;
+  background-color: #fff;
+}

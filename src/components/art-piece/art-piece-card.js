@@ -31,7 +31,8 @@ export const ArtPieceCard = props => {
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             {description}
-            {media && ` on ${media}`}
+            {description && ` on `}
+            {media && `${media}`}
             {widthInInches &&
               heightInInches &&
               ` ${widthInInches} x ${heightInInches}`}

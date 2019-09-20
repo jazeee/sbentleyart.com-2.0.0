@@ -1,47 +1,58 @@
 [
   {
     "id": "flowers",
-    "name": "Flowers and Plants",
-    "description": ""
+    "name": "Flower Power",
+    "imageFile": "2016-01-dahlias-oil-and-encaustic.jpg",
+    "description": "Flowers and plant paintings on canvas.",
+    "extraDescription": "The larger than normal depth creates a sculptural element to the art, and eliminates the need for a traditional frame."
   },
   {
     "id": "Beautiful_Creatures",
     "name": "Beautiful Creatures",
-    "description": ""
+    "imageFile": "01SeaMonster_oil_and_encaustic.jpg",
+    "description": "Imaginative creatures and depictions of life. All paintings are oil and encaustic on canvas.",
+    "extraDescription": "The larger than normal depth creates a sculptural element to the art, and eliminates the need for a traditional frame."
   },
   {
     "id": "Ugly_Bugs",
     "name": "Bugs",
-    "description": ""
+    "imageFile": "03Bee_oil_and_encaustic.jpg",
+    "description": "An exploration of imaginative insects and bugs",
+    "extraDescription": "The larger than normal depth creates a sculptural element to the art, and eliminates the need for a traditional frame."
   },
   {
     "id": "felting",
     "name": "Felt Creatures",
-    "description": ""
+    "imageFile": "2016-felt-01-arachnid-creature.jpg",
+    "description": "Odd and ominous creatures.",
+    "extraDescription": "Made from felt."
   },
   {
     "id": "Shapes",
     "name": "Exploration in Shapes",
-    "description": ""
+    "imageFile": "10_shapes_oil_and_encaustic.jpg",
+    "description": "An exploration into shapes and design",
+    "extraDescription": "The larger than normal depth creates a sculptural element to the art, and eliminates the need for a traditional frame."
   },
   {
     "id": "Wonderous_Places",
     "name": "Wondrous Places",
-    "description": ""
+    "imageFile": "01PacificAviationMuseum_oil_and_encaustic.jpg",
+    "description": "Studies of perspective from various destinations of travel.",
+    "extraDescription": "All paintings are oil on canvas."
   },
   {
     "id": "Wood_Blocks",
     "name": "Wood Blocks",
-    "description": ""
+    "imageFile": "wood-blocks-gallery.jpg",
+    "description": "An expression of art in the form of painted wood blocks.",
+    "extraDescription": "Reclaimed wood blocks reformed into art."
   },
   {
     "id": "boats",
     "name": "Boats",
-    "description": ""
-  },
-  {
-    "id": "Gallery_Views",
-    "name": "Gallery Showings",
-    "description": ""
+    "imageFile": "boats.jpg",
+    "description": "Sailing vessels and boats.",
+    "extraDescription": "Oil on canvas."
   }
 ]

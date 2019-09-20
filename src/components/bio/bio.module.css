@@ -1,0 +1,35 @@
+.container {
+  margin-top: 16px;
+  width: 100%;
+  background-color: black;
+  background-image: url("http://www.sbentleyart.com/images/banner-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (min-width: 960px) {
+  .container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+.bioContainer {
+  color: white;
+  background-color: rgba(64, 64, 64, 0.8);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+@media only screen and (min-width: 960px) {
+  .bioContainer {
+    border-radius: 8px;
+  }
+}
+
+.bioContainer * {
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+}
+
+.bioContainer *+* {
+  margin-top: 48px;
+}

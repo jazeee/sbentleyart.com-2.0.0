@@ -10,7 +10,7 @@ export const Gallery = props => {
   const { artPieces = [] } = props;
   return (
     <Container className={classes.container}>
-      <Typography variant="body1">{description}</Typography>
+      <Typography variant="h3" color="secondary" className={classes.description}>{description}</Typography>
       <Grid container spacing={2}>
         {artPieces.map(artPiece => (
           <ArtPieceCard artPiece={artPiece} key={artPiece.artPieceId} />

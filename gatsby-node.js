@@ -36,7 +36,9 @@ exports.createPages = ({ graphql, actions }) => {
             node {
               id
               name
+              imageFile
               description
+              extraDescription
             }
           }
         }

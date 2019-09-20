@@ -8,6 +8,7 @@ import { theme } from "../styles/theme";
 import { TargetBlankLink } from "./target-blank-link";
 import "../styles/global.css";
 import classes from "./layout.module.css";
+import Helmet from "react-helmet";
 
 import { Header } from "./header";
 
@@ -24,6 +25,9 @@ export const Layout = ({ children, breadcrumbs = [] }) => {
 
   return (
     <>
+      <Helmet>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet"/>
+      </Helmet>
       <CssBaseline />
       <MuiThemeProvider theme={theme}>
         <Header
