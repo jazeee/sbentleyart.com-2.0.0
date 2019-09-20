@@ -4,11 +4,7 @@
     "path": "/"
   },
   {
-    "name": "Art Pieces",
-    "path": "/art-pieces"
+    "name": "Galleries",
+    "path": "/galleries"
   },
-  {
-    "name": "Temp Art Piece",
-    "path": "/art-piece"
-  }
 ]
