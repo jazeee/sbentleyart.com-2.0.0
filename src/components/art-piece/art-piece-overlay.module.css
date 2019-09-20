@@ -3,16 +3,17 @@
   margin: 0 0;
 }
 
-.leftButton {
+.overlayButton, .overlayButton:hover {
   position: absolute;
-  top: 96px;
+  top: 224px;
+  background-color: white;
+  border: 1px solid rgba(0,0,0,.2);
+}
+
+.leftButton {
   left: 0;
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .rightButton {
-  position: absolute;
-  top: 96px;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.2);
 }

@@ -1,13 +1,24 @@
 .artPiece {
   width: 100%;
+  display: flex;
 }
 
 .artPiece + .artPiece {
   margin-top: 10px;
 }
 
+.cardContent {
+  flex: 1;
+  min-width: 25vw;
+}
 .media {
-  height: 256px;
+  height: 512px;
+  width: 512px;
+  flex: 3;
   background-size: contain;
   background-color: white;
+}
+
+.tag {
+  margin: 5px;
 }

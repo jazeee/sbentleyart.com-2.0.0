@@ -30,6 +30,10 @@ const useStyles = makeStyles(theme => ({
 export const Header = props => {
   const [isSideBarOpen, setIsSideBarOpen] = React.useState(false);
   const { title, breadcrumbs } = props;
+  const allBreadcrumbs = [
+    {name: title, path: "/"},
+    ...breadcrumbs,
+  ];
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -55,20 +59,26 @@ export const Header = props => {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" className={classes.title}>
-              <Link to="/" color="inherit">
-                {title}
-              </Link>
-              {breadcrumbs.map(breadcrumb => {
+              {allBreadcrumbs.map((breadcrumb, index) => {
                 const { name, path } = breadcrumb;
-                if (!path) {
-                  return <span key={name}>{` > ${name}`}</span>;
+                const isFirst = index === 0;
+                const isLast = index === allBreadcrumbs.length - 1;
+                const styles = {
+                  fontWeight: isLast ? "bold": "normal",
+                  opacity: isLast? 1 : 0.7,
                 }
                 return (
                   <span key={name}>
-                    {" "}&gt;{" "}
-                    <Link to={path} color="inherit">
-                      {name}
-                    </Link>
+                    {!isFirst && " > "}
+                    {path ?
+                      <Link to={path} color="inherit" style={styles}>
+                        {name}
+                      </Link>
+                      :
+                      <span style={styles}>
+                        {name}
+                      </span>
+                    }
                   </span>
                 );
               })}

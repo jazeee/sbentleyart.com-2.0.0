@@ -8,7 +8,7 @@
     "heightInInches": 36,
     "depthInInches": 4,
     "media": "Oil and encaustic on canvas with wood framing",
-    "tags": []
+    "tags": ["Sold"]
   },
   {
     "name": "Hive",
@@ -19,7 +19,7 @@
     "heightInInches": 36,
     "depthInInches": 4,
     "media": "Oil and encaustic on canvas with wood framing",
-    "tags": ["test2"]
+    "tags": ["Sold"]
   },
   {
     "name": "Bee",
@@ -131,7 +131,7 @@
     "galleryId": "Ugly_Bugs",
     "imageFiles": ["12Fireflys_oil_and_encaustic_Sold.JPG"],
     "status": "Sold",
-    "tags": []
+    "tags": ["Sold"]
   },
   {
     "name": "Husk",
@@ -202,7 +202,7 @@
     "galleryId": "Beautiful_Creatures",
     "imageFiles": ["2016-05-tentacles-lurking-in-woods-oil-and-encaustic.jpg"],
     "price": 700,
-    "tags": [],
+    "tags": ["Featured", "Popular"],
     "widthInInches": 26,
     "heightInInches": 36,
     "depthInInches": 4,
@@ -217,7 +217,7 @@
       "2016-06-sea-creature-battle-with-airship-oil-and-encaustic.jpg"
     ],
     "price": 700,
-    "tags": [],
+    "tags": ["Featured", "Popular"],
     "widthInInches": 26,
     "heightInInches": 36,
     "depthInInches": 4,
@@ -230,7 +230,7 @@
     "galleryId": "Beautiful_Creatures",
     "imageFiles": ["2016-08-jelly-fish-oil-and-encaustic.jpg"],
     "price": 700,
-    "tags": [],
+    "tags": ["Featured", "Popular"],
     "widthInInches": 26,
     "heightInInches": 36,
     "depthInInches": 4,
@@ -243,7 +243,7 @@
     "galleryId": "Beautiful_Creatures",
     "imageFiles": ["2016-07-bird-creature-with-babies-oil-and-encaustic.jpg"],
     "price": 700,
-    "tags": [],
+    "tags": ["Featured", "Popular"],
     "widthInInches": 26,
     "heightInInches": 36,
     "depthInInches": 4,
@@ -256,7 +256,7 @@
     "galleryId": "Beautiful_Creatures",
     "imageFiles": ["squid-and-octopus-1.jpg", "squid-and-octopus-2.jpg"],
     "status": "Sold",
-    "tags": [],
+    "tags": ["Sold", "Popular"],
     "widthInInches": 26,
     "heightInInches": 24,
     "depthInInches": 4,
@@ -269,7 +269,7 @@
     "galleryId": "Beautiful_Creatures",
     "imageFiles": ["14HummingBirdOilAndEncaustic.jpg"],
     "price": 400,
-    "tags": [],
+    "tags": ["Featured", "Popular"],
     "widthInInches": 26,
     "heightInInches": 36,
     "depthInInches": 4,
@@ -282,7 +282,7 @@
     "galleryId": "boats",
     "imageFiles": ["15FlyingBoatsAbstractOilAndEncaustic.jpg"],
     "price": 700,
-    "tags": [],
+    "tags": ["Featured", "Popular"],
     "widthInInches": 24,
     "heightInInches": 26,
     "depthInInches": 4,
@@ -312,12 +312,12 @@
       "04Squid2_oil_and_encaustic.JPG"
     ],
     "price": 500,
-    "tags": [],
+    "tags": ["Featured", "Popular"],
     "widthInInches": 36,
     "heightInInches": 26,
     "depthInInches": 4,
     "media": "Oil and encaustic on canvas with wood framing",
-    "isFeatured": false
+    "isFeatured": true
   },
   {
     "name": "Cthulhu",
@@ -392,7 +392,7 @@
     "imageFiles": ["13SeaCreature_oil_and_encaustic.jpg"],
     "price": 394.74,
     "status": "Sold",
-    "tags": [],
+    "tags": ["Sold", "Popular"],
     "widthInInches": 24,
     "heightInInches": 26,
     "depthInInches": 4,
@@ -471,7 +471,7 @@
     "galleryId": "Wonderous_Places",
     "imageFiles": ["hawaii-fruit-stand.jpg"],
     "price": 550,
-    "tags": [],
+    "tags": ["Featured"],
     "widthInInches": 36,
     "heightInInches": 26,
     "depthInInches": 4,
@@ -484,7 +484,7 @@
     "galleryId": "Wonderous_Places",
     "imageFiles": ["paris-wood-blocks.jpg"],
     "price": 250,
-    "tags": [],
+    "tags": ["Featured"],
     "widthInInches": 12,
     "heightInInches": 14,
     "depthInInches": 4,
@@ -497,7 +497,7 @@
     "galleryId": "Wonderous_Places",
     "imageFiles": ["florence-italy.jpg"],
     "price": 300,
-    "tags": [],
+    "tags": ["Featured", "Popular"],
     "widthInInches": 12,
     "heightInInches": 18,
     "depthInInches": 4,
@@ -510,7 +510,7 @@
     "galleryId": "Wonderous_Places",
     "imageFiles": ["new-york-cloisters.jpg"],
     "price": 600,
-    "tags": [],
+    "tags": ["Featured"],
     "widthInInches": 36,
     "heightInInches": 48,
     "depthInInches": 1,
@@ -524,7 +524,7 @@
     "galleryId": "Wonderous_Places",
     "imageFiles": ["03HallPerspectiveOilAndEncaustic.jpg"],
     "price": 800,
-    "tags": [],
+    "tags": ["Featured"],
     "isFeatured": true
   },
   {
@@ -533,7 +533,7 @@
     "galleryId": "Wonderous_Places",
     "imageFiles": ["04WarOfTheWorldsOilAndEncaustic.jpg"],
     "price": 350,
-    "tags": [],
+    "tags": ["Featured"],
     "widthInInches": 20,
     "heightInInches": 26,
     "depthInInches": 1,
@@ -545,12 +545,12 @@
     "galleryId": "Wonderous_Places",
     "imageFiles": ["01PacificAviationMuseum_oil_and_encaustic.JPG"],
     "price": 800,
-    "tags": [],
+    "tags": ["Featured", "Popular", "Artist's Favorites"],
     "widthInInches": 48,
     "heightInInches": 30,
     "depthInInches": 1,
     "media": "Oil and encaustic on canvas with wood framing",
-    "isFeatured": false
+    "isFeatured": true
   },
   {
     "name": "Perspective Study",
@@ -862,7 +862,7 @@
     "galleryId": "flowers",
     "imageFiles": ["2016-02-glads-oil-and-encaustic.jpg"],
     "status": "Sold",
-    "tags": [],
+    "tags": ["Sold"],
     "widthInInches": 24,
     "heightInInches": 26,
     "depthInInches": 4,
@@ -874,48 +874,48 @@
     "galleryId": "flowers",
     "imageFiles": ["2016-03-glads-oil-and-encaustic.jpg"],
     "price": 500,
-    "tags": [],
+    "tags": ["Featured", "Popular", "Artist's Favorites"],
     "widthInInches": 24,
     "heightInInches": 32,
     "depthInInches": 1,
     "media": "Oil and encaustic on canvas with wood framing",
-    "isFeatured": false
+    "isFeatured": true
   },
   {
     "name": "Flowers on Walkway at Tolman Terrace",
     "galleryId": "flowers",
     "imageFiles": ["2016-04-tolman-terrace-entry-oil-and-encaustic.jpg"],
     "status": "Personal",
-    "tags": [],
+    "tags": ["Featured", "Popular", "Artist's Favorites"],
     "widthInInches": 24,
     "heightInInches": 26,
     "depthInInches": 4,
     "media": "Oil and encaustic on canvas with wood framing",
-    "isFeatured": false
+    "isFeatured": true
   },
   {
     "name": "Sunflowers in Bucket",
     "galleryId": "flowers",
     "imageFiles": ["2016-05-sunflowers-in-bucket-oil-and-encaustic.jpg"],
     "status": "Sold",
-    "tags": [],
+    "tags": ["Sold", "Featured", "Artist's Favorites"],
     "widthInInches": 24,
     "heightInInches": 26,
     "depthInInches": 4,
     "media": "Oil and encaustic on canvas with wood framing",
-    "isFeatured": false
+    "isFeatured": true
   },
   {
     "name": "Flowers in Bucket",
     "galleryId": "flowers",
     "imageFiles": ["2016-06-flowers-in-bucket-oil-and-encaustic.jpg"],
     "price": 700,
-    "tags": [],
+    "tags": ["Featured", "Popular", "Artist's Favorites"],
     "widthInInches": 24,
     "heightInInches": 36,
     "depthInInches": 4,
     "media": "Oil and encaustic on canvas with wood framing",
-    "isFeatured": false
+    "isFeatured": true
   },
   {
     "name": "Arachnid Creature",
@@ -923,7 +923,7 @@
     "galleryId": "felting",
     "imageFiles": ["2016-felt-01-arachnid-creature.jpg"],
     "price": 78.95,
-    "tags": [],
+    "tags": ["Featured", "Popular", "Artist's Favorites"],
     "widthInInches": 8,
     "heightInInches": 8,
     "depthInInches": 0.25,

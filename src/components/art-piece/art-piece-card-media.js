@@ -5,7 +5,7 @@ import classes from "./art-piece-card.module.css";
 import { getImageUrl } from "./utils";
 
 export const ArtPieceCardMedia = props => {
-  const { artPiece, height, isHighRes = false } = props;
+  const { artPiece, height = 512, isHighRes = false } = props;
   const [imageIndex, setImageIndex] = useState(0);
   const { name, imageFiles } = artPiece;
   const imageUrl = getImageUrl(
@@ -19,7 +19,6 @@ export const ArtPieceCardMedia = props => {
       style={{
         height,
       }}
-      title={name}
       image={imageUrl}
       component={ArtPieceOverlay}
       onLeftClick={

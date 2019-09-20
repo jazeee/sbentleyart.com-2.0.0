@@ -11,7 +11,7 @@ export const ArtPieceOverlay = props => {
       {onLeftClick && (
         <IconButton
           classes={{
-            root: classes.leftButton,
+            root: `${classes.leftButton} ${classes.overlayButton}`,
           }}
           aria-label="left"
           onClick={onLeftClick}
@@ -26,7 +26,7 @@ export const ArtPieceOverlay = props => {
       {onRightClick && (
         <IconButton
           classes={{
-            root: classes.rightButton,
+            root: `${classes.rightButton} ${classes.overlayButton}`,
           }}
           aria-label="right"
           onClick={onRightClick}
