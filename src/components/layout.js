@@ -26,7 +26,7 @@ export const Layout = ({ children, breadcrumbs = [] }) => {
   return (
     <>
       <Helmet>
-        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet" key="serif-font"/>
       </Helmet>
       <CssBaseline />
       <MuiThemeProvider theme={theme}>

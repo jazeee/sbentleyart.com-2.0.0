@@ -919,7 +919,7 @@
   },
   {
     "name": "Arachnid Creature",
-    "description": "An exploration of imaginative creations in felt cloth.",
+    "description": "Arachnid in felt cloth.",
     "galleryId": "felting",
     "imageFiles": ["2016-felt-01-arachnid-creature.jpg"],
     "price": 78.95,
@@ -932,7 +932,7 @@
   },
   {
     "name": "Haunting Winged Creature",
-    "description": "An exploration of imaginative creations in felt cloth.",
+    "description": "Weird winged creature in felt cloth.",
     "galleryId": "felting",
     "imageFiles": ["2016-felt-02-haunting-winged-creature.jpg"],
     "price": 78.95,

@@ -5,3 +5,13 @@
 .description {
   margin: 10px 0;
 }
+
+.galleryCard .cardContent {
+  min-height: 128px;
+}
+
+.galleryCard .media {
+  height: 256px;
+  background-size: contain;
+  background-color: white;
+}

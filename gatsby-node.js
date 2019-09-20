@@ -71,7 +71,7 @@ exports.createPages = ({ graphql, actions }) => {
       const breadcrumbs = [
         {
           name: gallery.name || galleryId,
-          path: galleryPath,
+          path: `/${galleryPath}`,
         },
         {
           name,

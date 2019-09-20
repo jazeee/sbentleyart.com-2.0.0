@@ -61,15 +61,15 @@ export const Header = props => {
               {breadcrumbs.map(breadcrumb => {
                 const { name, path } = breadcrumb;
                 if (!path) {
-                  return ` > ${name}`;
+                  return <span key={name}>{` > ${name}`}</span>;
                 }
                 return (
-                  <>
-                    &gt;{" "}
+                  <span key={name}>
+                    {" "}&gt;{" "}
                     <Link to={path} color="inherit">
                       {name}
                     </Link>
-                  </>
+                  </span>
                 );
               })}
             </Typography>
