@@ -7,6 +7,8 @@ import Grid from "@material-ui/core/Grid";
 import { ForwardRefLink } from "../link";
 import Typography from "@material-ui/core/Typography";
 import { getImageUrl } from "../art-piece/utils";
+import { LikeButton } from "../facebook/like-button";
+import { Location } from "@reach/router";
 
 export const GalleryCard = props => {
   const { artPiece } = props;
@@ -44,8 +46,13 @@ export const GalleryCard = props => {
             {media && `${media}`}
             {widthInInches &&
               heightInInches &&
-              ` ${widthInInches} x ${heightInInches}`}
+              ` ${widthInInches}" x ${heightInInches}"`}
           </Typography>
+          <Location>
+            {({location}) => (
+              <LikeButton href={`${location.origin}${targetLink}`}/>
+            )}
+          </Location>
         </CardContent>
       </Card>
     </Grid>

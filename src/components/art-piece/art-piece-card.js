@@ -5,6 +5,8 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import { ArtPieceCardMedia } from "./art-piece-card-media";
 import { ArtPieceTags } from "./art-piece-tags";
+import { LikeButton } from "../facebook/like-button";
+import { CommentsBlock } from "../facebook/comments-block";
 
 export const ArtPieceCard = props => {
   const { artPiece } = props;
@@ -32,7 +34,7 @@ export const ArtPieceCard = props => {
           {media && `${media}`}
           {widthInInches &&
             heightInInches &&
-            ` ${widthInInches} x ${heightInInches}`}
+            ` ${widthInInches}" x ${heightInInches}"`}
         </Typography>
         {price &&
           <Typography variant="h6">
@@ -40,6 +42,8 @@ export const ArtPieceCard = props => {
           </Typography>
         }
         <ArtPieceTags tags={tags}/>
+        <LikeButton share includeMargin />
+        <CommentsBlock />
       </CardContent>
     </Card>
   );
