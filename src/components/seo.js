@@ -9,6 +9,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
+import { Location } from "@reach/router";
 
 export function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -29,51 +30,59 @@ export function SEO({ description, lang, meta, title }) {
   const metaDescription = description || site.siteMetadata.description;
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-        {
-          name: `keywords`,
-          content: site.siteMetadata.keywords,
-        },
-      ].concat(meta)}
-    />
+    <Location>
+      {({ location }) => (
+        <Helmet
+          htmlAttributes={{
+            lang,
+          }}
+          title={title}
+          titleTemplate={`%s | ${site.siteMetadata.title}`}
+          meta={[
+            {
+              name: `og:url`,
+              content: location.href,
+            },
+            {
+              name: `description`,
+              content: metaDescription,
+            },
+            {
+              property: `og:title`,
+              content: title,
+            },
+            {
+              property: `og:description`,
+              content: metaDescription,
+            },
+            {
+              property: `og:type`,
+              content: `website`,
+            },
+            {
+              name: `twitter:card`,
+              content: `summary`,
+            },
+            {
+              name: `twitter:creator`,
+              content: site.siteMetadata.author,
+            },
+            {
+              name: `twitter:title`,
+              content: title,
+            },
+            {
+              name: `twitter:description`,
+              content: metaDescription,
+            },
+            {
+              name: `keywords`,
+              content: site.siteMetadata.keywords,
+            },
+          ].concat(meta)}
+        />
+      )}
+    </Location>
   );
 }
 
