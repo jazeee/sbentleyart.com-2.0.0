@@ -8,7 +8,6 @@ export default props => {
   const {
     pageContext: { artPiece, breadcrumbs },
   } = props;
-  console.log(artPiece);
   return (
     <Layout breadcrumbs={breadcrumbs}>
       <SEO title={artPiece.name} />

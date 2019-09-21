@@ -1,6 +1,6 @@
 import React from "react";
 import { FacebookProvider, Like } from 'react-facebook';
-import { APP_ID } from "./constants";
+import { getAppId } from "./constants";
 import { Location } from "@reach/router";
 import classes from "./styles.module.css";
 
@@ -8,9 +8,9 @@ export const LikeButton = (props) => {
   const { includeMargin, ...buttonProps } = props;
   return (
     <div className={includeMargin ? classes.likeButtonMargin : undefined}>
-      <FacebookProvider appId={APP_ID}>
-        <Location>
-          {({ location }) => (
+      <Location>
+        {({ location }) => (
+          <FacebookProvider appId={getAppId(location.hostname)}>
             <Like
               href={location.href}
               colorScheme="light"
@@ -18,9 +18,9 @@ export const LikeButton = (props) => {
               layout="button_count"
               {...buttonProps}
             />
-          )}
-        </Location>
-      </FacebookProvider>
+          </FacebookProvider>
+        )}
+      </Location>
     </div>
   );
 }
