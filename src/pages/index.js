@@ -11,7 +11,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Galleries />
     <Bio />
-    <LikeButton share includeMargin />
+    <LikeButton includeMargin />
   </Layout>
 );
 

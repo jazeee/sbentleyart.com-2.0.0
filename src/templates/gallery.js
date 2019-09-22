@@ -18,7 +18,7 @@ export default props => {
         image={getImageUrl(gallery)}
       />
       <Gallery gallery={gallery} artPieces={artPieces} />
-      <LikeButton share includeMargin />
+      <LikeButton includeMargin />
     </Layout>
   );
 };
