@@ -1,6 +1,10 @@
 .artPiece {
   width: 100%;
-  display: flex;
+}
+@media only screen and (min-width: 768px) {
+  .artPiece {
+    display: flex;
+  }
 }
 
 .artPiece + .artPiece {
@@ -13,7 +17,7 @@
 }
 .media {
   height: 512px;
-  width: 512px;
+  max-width: 100%;
   flex: 3;
   background-size: contain;
   background-color: white;

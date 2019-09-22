@@ -44,9 +44,14 @@ export const Layout = ({ children, breadcrumbs = [] }) => {
               <br />
               Due to the nature of the art product, all sales are final and
               non-refundable.
-              <br />
+            </Typography>
+            <br />
+            <Typography variant="caption" className={classes.developedBy}>
               Site developed by{" "}
-              <TargetBlankLink href="http://jazeee.com">
+              <TargetBlankLink
+                href="http://jazeee.com"
+                className={classes.developedByLink}
+              >
                 Jaz Singh
               </TargetBlankLink>{" "}
               using Gatsby

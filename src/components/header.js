@@ -4,6 +4,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
+import withWidth from '@material-ui/core/withWidth';
 import MenuIcon from "@material-ui/icons/Menu";
 import Drawer from "@material-ui/core/Drawer";
 import { makeStyles } from "@material-ui/core/styles";
@@ -27,13 +28,16 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export const Header = props => {
+const HeaderComponent = props => {
   const [isSideBarOpen, setIsSideBarOpen] = React.useState(false);
-  const { title, breadcrumbs } = props;
+  const { title, breadcrumbs, width } = props;
+  const isSmallWidth = ["xs", "sm"].includes(width);
   const allBreadcrumbs = [
     {name: title, path: "/"},
     ...breadcrumbs,
-  ];
+  ].filter((item, index) => (
+    !isSmallWidth || index !== 0 || breadcrumbs.length < 2
+  ));
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -58,7 +62,7 @@ export const Header = props => {
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" className={classes.title}>
+            <Typography variant={isSmallWidth ? "body1": "h6"} className={classes.title}>
               {allBreadcrumbs.map((breadcrumb, index) => {
                 const { name, path } = breadcrumb;
                 const isFirst = index === 0;
@@ -90,6 +94,8 @@ export const Header = props => {
     </div>
   );
 };
+
+export const Header = withWidth()(HeaderComponent);
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

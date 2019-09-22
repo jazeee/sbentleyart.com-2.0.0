@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
 const SideBarItem = (props) => {
   const classes = useStyles();
   const { name, path, location, isNested } = props;
-  const isCurrentPath = location.pathname === path;
+  const isCurrentPath = location.pathname.includes(path);
   let className = isCurrentPath ? classes.selectedLink : "";
   if (isNested) {
     className += ` ${classes.nestedMenu}`;
@@ -48,7 +48,7 @@ const SideBarItem = (props) => {
 const SideBarExpanderItem = (props) => {
   const { name, subTree, location } = props;
   const [isExpanded, setIsExpanded] = useState(
-    subTree.some(({ path }) => location.pathname === path )
+    subTree.some(({ path }) => location.pathname.includes(path))
   );
   const onClickExpand = (event) => {
     setIsExpanded(!isExpanded);
