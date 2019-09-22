@@ -41,12 +41,12 @@ export function SEO({ description, lang, image, meta, title }) {
           titleTemplate={`%s | ${site.siteMetadata.title}`}
           meta={[
             {
-              name: `og:url`,
-              content: location.href,
-            },
-            {
               name: `description`,
               content: metaDescription,
+            },
+            {
+              property: `og:url`,
+              content: location.href,
             },
             {
               property: `og:title`,
