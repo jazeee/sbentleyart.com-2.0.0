@@ -11,7 +11,7 @@ import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 import { Location } from "@reach/router";
 
-export function SEO({ description, lang, meta, title }) {
+export function SEO({ description, lang, image, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -28,7 +28,7 @@ export function SEO({ description, lang, meta, title }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
-
+  const metaImage = image || "http://www.sbentleyart.com/images/background.jpg";
   return (
     <Location>
       {({ location }) => (
@@ -54,6 +54,10 @@ export function SEO({ description, lang, meta, title }) {
             {
               property: `og:description`,
               content: metaDescription,
+            },
+            {
+              property: `og:image`,
+              content: metaImage,
             },
             {
               property: `og:type`,

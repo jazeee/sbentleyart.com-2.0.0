@@ -3,6 +3,7 @@ import React from "react";
 import { Layout } from "../components/layout";
 import { SEO } from "../components/seo";
 import { ArtPiece } from "../components/art-piece/art-piece";
+import { getImageUrl } from "../components/art-piece/utils";
 
 export default props => {
   const {
@@ -10,7 +11,11 @@ export default props => {
   } = props;
   return (
     <Layout breadcrumbs={breadcrumbs}>
-      <SEO title={artPiece.name} />
+      <SEO
+        title={artPiece.name}
+        description={artPiece.description || "Art by Sarah Bentley"}
+        image={getImageUrl(artPiece, 0)}
+      />
       <ArtPiece artPiece={artPiece} />
     </Layout>
   );

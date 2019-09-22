@@ -9,17 +9,22 @@ export const LikeButton = (props) => {
   return (
     <div className={includeMargin ? classes.likeButtonMargin : undefined}>
       <Location>
-        {({ location }) => (
-          <FacebookProvider appId={getAppId(location.hostname)}>
-            <Like
-              href={location.href}
-              colorScheme="light"
-              showFaces={false}
-              layout="button_count"
-              {...buttonProps}
-            />
-          </FacebookProvider>
-        )}
+        {({ location }) => {
+          if (!location.hostname || !location.href) {
+            return null;
+          }
+          return (
+            <FacebookProvider appId={getAppId(location.hostname)}>
+              <Like
+                href={location.href}
+                colorScheme="light"
+                showFaces={false}
+                layout="button_count"
+                {...buttonProps}
+              />
+            </FacebookProvider>
+          );
+        }}
       </Location>
     </div>
   );

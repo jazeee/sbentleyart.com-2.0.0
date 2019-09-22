@@ -8,6 +8,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import { ForwardRefLink } from "../link";
+import { getImageUrl } from "../gallery/utils";
 
 export const Galleries = props => {
   const data = useStaticQuery(graphql`
@@ -28,9 +29,9 @@ export const Galleries = props => {
       <Typography variant="h3" color="primary">Galleries</Typography>
       <Grid container spacing={2}>
         {nodes.map(node => {
-          const { id, name, imageFile, description } = node;
+          const { id, name, description } = node;
           const targetLink = `/galleries/${id}`;
-          const imageUrl = `http://www.sbentleyart.com/images/galleries/${imageFile}`;
+          const imageUrl = getImageUrl(node);
           return (
             <Grid item xs={12} sm={6} md={4} lg={3} key={id}>
               <Card className={classes.gallery}>

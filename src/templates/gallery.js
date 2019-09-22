@@ -3,6 +3,7 @@ import React from "react";
 import { Layout } from "../components/layout";
 import { SEO } from "../components/seo";
 import { Gallery } from "../components/gallery/gallery";
+import { getImageUrl } from "../components/gallery/utils";
 import { LikeButton } from "../components/facebook/like-button";
 
 export default props => {
@@ -11,7 +12,11 @@ export default props => {
   } = props;
   return (
     <Layout breadcrumbs={breadcrumbs}>
-      <SEO title={gallery.name} />
+      <SEO
+        title={gallery.name}
+        description={gallery.description}
+        image={getImageUrl(gallery)}
+      />
       <Gallery gallery={gallery} artPieces={artPieces} />
       <LikeButton share includeMargin />
     </Layout>
