@@ -10,6 +10,7 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 import { Location } from "@reach/router";
+import { getAppId } from "./facebook/constants";
 
 export function SEO({ description, lang, image, meta, title }) {
   const { site } = useStaticQuery(
@@ -62,6 +63,10 @@ export function SEO({ description, lang, image, meta, title }) {
             {
               property: `og:type`,
               content: `website`,
+            },
+            {
+              property: `fb:app_id`,
+              content: getAppId(location.hostname),
             },
             {
               name: `twitter:card`,
