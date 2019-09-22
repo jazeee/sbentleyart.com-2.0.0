@@ -64,10 +64,10 @@ exports.createPages = ({ graphql, actions }) => {
     });
     sourceArtPieces.forEach(artPiece => {
       const { name, artPieceId, galleryId } = artPiece;
-      const galleryPath = `galleries/${galleryId}`;
+      const galleryPath = `galleries/${galleryId}/`;
       const gallery =
         sourceGalleries.find(gallery => gallery.id === galleryId) || {};
-      const path = `galleries/${galleryId}/art-pieces/${artPieceId}`;
+      const path = `galleries/${galleryId}/art-pieces/${artPieceId}/`;
       const breadcrumbs = [
         {
           name: gallery.name || galleryId,
@@ -91,7 +91,7 @@ exports.createPages = ({ graphql, actions }) => {
       const artPieces = sourceArtPieces.filter(
         artPiece => artPiece.galleryId === id
       );
-      const path = `galleries/${id}`;
+      const path = `galleries/${id}/`;
       const breadcrumbs = [
         {
           name: gallery.name || id,

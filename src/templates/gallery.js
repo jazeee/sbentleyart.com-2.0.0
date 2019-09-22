@@ -16,6 +16,7 @@ export default props => {
         title={gallery.name}
         description={gallery.description}
         image={getImageUrl(gallery)}
+        pathname={props.location.pathname}
       />
       <Gallery gallery={gallery} artPieces={artPieces} />
       <LikeButton includeMargin />

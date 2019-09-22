@@ -15,6 +15,7 @@ export default props => {
         title={artPiece.name}
         description={artPiece.description || "Art by Sarah Bentley"}
         image={getImageUrl(artPiece, 0)}
+        pathname={props.location.pathname}
       />
       <ArtPiece artPiece={artPiece} />
     </Layout>

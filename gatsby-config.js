@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Sarah Bentley Art`,
-    description: `S Bentley Studio, encaustic paintings, wood block art. Sarah Bentley is a local Madison artist. She received her MFA in painting from the University of Wisconsin Madison, and continues to work on her art from her studio, at Commonwealth Enterprise center. Her work has been shown in Wisconsin and Minnesota. Her paintings are created with a mixture of oil paint and beeswax, also known as "encaustic". Her most recent work has focused on imaginative depictions of insects and beehives. The larger than normal 4 inch depth of her canvases create a sculptural element to the art, and eliminate the need for a traditional frame.`,
+    description: `S Bentley Studios - Fine Paintings and Artwork by Sarah Bentley, MFA.`,
     author: `@sbentley`,
-    keywords: `sbentley Sarah Bentley`,
+    keywords: `sbentley Sarah Bentley Art Paintings Sculpture MFA Artwork Artistry`,
     url: "http://www.sbentleyart.com",
   },
   plugins: [
@@ -17,7 +17,6 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-remove-trailing-slashes`,
     `gatsby-plugin-lodash`,
     {
       resolve: `gatsby-source-filesystem`,

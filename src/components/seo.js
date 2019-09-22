@@ -12,7 +12,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import { Location } from "@reach/router";
 import { getAppId } from "./facebook/constants";
 
-export function SEO({ description, lang, image, meta, title }) {
+export function SEO({ description, lang, image, meta, title, pathname }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -22,13 +22,15 @@ export function SEO({ description, lang, image, meta, title }) {
             description
             author
             keywords
+            url
           }
         }
       }
     `
   );
+  const { siteMetadata } = site;
 
-  const metaDescription = description || site.siteMetadata.description;
+  const metaDescription = description || siteMetadata.description;
   const metaImage = image || "http://www.sbentleyart.com/images/background.jpg";
   return (
     <Location>
@@ -38,7 +40,7 @@ export function SEO({ description, lang, image, meta, title }) {
             lang,
           }}
           title={title}
-          titleTemplate={`%s | ${site.siteMetadata.title}`}
+          titleTemplate={`%s | ${siteMetadata.title}`}
           meta={[
             {
               name: `description`,
@@ -46,7 +48,7 @@ export function SEO({ description, lang, image, meta, title }) {
             },
             {
               property: `og:url`,
-              content: location.href,
+              content: location.href || `${siteMetadata.url}${pathname || "/"}`,
             },
             {
               property: `og:title`,
@@ -74,7 +76,7 @@ export function SEO({ description, lang, image, meta, title }) {
             },
             {
               name: `twitter:creator`,
-              content: site.siteMetadata.author,
+              content: siteMetadata.author,
             },
             {
               name: `twitter:title`,
@@ -86,7 +88,7 @@ export function SEO({ description, lang, image, meta, title }) {
             },
             {
               name: `keywords`,
-              content: site.siteMetadata.keywords,
+              content: siteMetadata.keywords,
             },
           ].concat(meta)}
         />
@@ -107,4 +109,5 @@ SEO.propTypes = {
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
   keywords: PropTypes.string,
+  pathname: PropTypes.string,
 };

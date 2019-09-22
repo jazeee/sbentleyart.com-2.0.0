@@ -4,9 +4,12 @@ import { Layout } from "../components/layout";
 import { SEO } from "../components/seo";
 import { Galleries } from "../components/galleries/galleries";
 
-const IndexPage = () => (
+const IndexPage = (props) => (
   <Layout>
-    <SEO title="Galleries" />
+    <SEO
+      title="Galleries"
+      pathname={props.location.pathname}
+    />
     <Galleries />
   </Layout>
 );
