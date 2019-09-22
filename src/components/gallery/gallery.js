@@ -10,7 +10,7 @@ export const Gallery = props => {
   const { artPieces = [] } = props;
   return (
     <Container className={classes.container}>
-      <Typography variant="h3" color="primary" className={classes.description}>{description}</Typography>
+      <Typography variant="h4" color="primary" className={classes.description}>{description}</Typography>
       {extraDescription &&
         <Typography variant="h5" color="primary" className={classes.description}>{extraDescription}</Typography>
       }
