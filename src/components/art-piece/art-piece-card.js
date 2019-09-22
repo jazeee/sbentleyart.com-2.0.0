@@ -42,7 +42,7 @@ export const ArtPieceCard = props => {
           </Typography>
         }
         <ArtPieceTags tags={tags}/>
-        <LikeButton includeMargin />
+        <LikeButton share includeMargin />
         <CommentsBlock />
       </CardContent>
     </Card>

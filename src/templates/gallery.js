@@ -19,7 +19,7 @@ export default props => {
         pathname={props.location.pathname}
       />
       <Gallery gallery={gallery} artPieces={artPieces} />
-      <LikeButton includeMargin />
+      <LikeButton share includeMargin />
     </Layout>
   );
 };
