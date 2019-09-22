@@ -5,10 +5,10 @@ export const getImageUrl = (artPiece, imageIndex, quality = "LowRes") => {
   switch (quality) {
     case "LowRes":
     default:
-      return `http://www.sbentleyart.com/images/art-2.0/LowRes/${galleryId}LowRes/${image}`;
+      return `http://images.sbentleyart.com/images/art-2.0/LowRes/${galleryId}LowRes/${image}`;
     case "MedRes":
-      return `http://www.sbentleyart.com/images/art-2.0/MedRes/${galleryId}/${image}`;
+      return `http://images.sbentleyart.com/images/art-2.0/MedRes/${galleryId}/${image}`;
     case "FullRes":
-      return `http://www.sbentleyart.com/images/art-2.0/${galleryId}/${image}`;
+      return `http://images.sbentleyart.com/images/art-2.0/${galleryId}/${image}`;
   }
 };

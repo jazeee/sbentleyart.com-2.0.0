@@ -31,7 +31,7 @@ export function SEO({ description, lang, image, meta, title, pathname }) {
   const { siteMetadata } = site;
 
   const metaDescription = description || siteMetadata.description;
-  const metaImage = image || "http://www.sbentleyart.com/images/background.jpg";
+  const metaImage = image || "http://images.sbentleyart.com/images/background.jpg";
   return (
     <Location>
       {({ location }) => (
