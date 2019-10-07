@@ -1,5 +1,192 @@
 [
   {
+    "name": "Dahlia Arrangement",
+    "galleryId": "Watercolors",
+    "imageFiles": ["dahlia-arrangement-watercolor.jpg"],
+    "price": 85,
+    "widthInInches": 10.25,
+    "heightInInches": 7,
+    "depthInInches": 0,
+    "media": "Watercolor on paper",
+    "tags": []
+  },
+  {
+    "name": "Dahlias in pot",
+    "galleryId": "Watercolors",
+    "imageFiles": ["dahlias-in-pot-watercolor.jpg"],
+    "price": 85,
+    "widthInInches": 8.25,
+    "heightInInches": 11.75,
+    "depthInInches": 0,
+    "media": "Watercolor on paper",
+    "tags": []
+  },
+  {
+    "name": "Flower Arrangement",
+    "galleryId": "Watercolors",
+    "imageFiles": ["flower-arrangement-watercolor.jpg"],
+    "price": 85,
+    "widthInInches": 8.25,
+    "heightInInches": 11.75,
+    "depthInInches": 0,
+    "media": "Watercolor on paper",
+    "tags": []
+  },
+  {
+    "name": "Flowers in Bowl",
+    "galleryId": "Watercolors",
+    "imageFiles": ["flowers-in-bowl-watercolor.jpg"],
+    "price": 85,
+    "widthInInches": 6.0,
+    "heightInInches": 8.5,
+    "depthInInches": 0,
+    "media": "Watercolor on paper",
+    "tags": []
+  },
+  {
+    "name": "Flowers in Vase",
+    "galleryId": "Watercolors",
+    "imageFiles": ["flowers-in-vase-watercolor.jpg"],
+    "price": 55,
+    "widthInInches": 6.0,
+    "heightInInches": 8.5,
+    "depthInInches": 0,
+    "media": "Watercolor on paper",
+    "tags": []
+  },
+  {
+    "name": "It's Behind the Tree",
+    "galleryId": "Watercolors",
+    "imageFiles": ["its-behind-the-tree-watercolor.jpg"],
+    "price": 135,
+    "widthInInches": 10.25,
+    "heightInInches": 14.25,
+    "depthInInches": 0,
+    "media": "Watercolor on paper",
+    "tags": ["Creature Feature"]
+  },
+  {
+    "name": "Orange Dahlias and Purple Poms",
+    "galleryId": "Watercolors",
+    "imageFiles": ["orange-dahlias-and-purple-poms-watercolor.jpg"],
+    "price": 85,
+    "widthInInches": 8.5,
+    "heightInInches": 11.75,
+    "depthInInches": 0,
+    "media": "Watercolor on paper",
+    "tags": ["Featured"]
+  },
+  {
+    "name": "Orange Dahlias In Patterned Pot",
+    "galleryId": "Watercolors",
+    "imageFiles": ["orange-dahlias-in-gray-pot-watercolor.jpg"],
+    "price": 135,
+    "widthInInches": 10.25,
+    "heightInInches": 14.25,
+    "depthInInches": 0,
+    "media": "Watercolor on paper",
+    "tags": ["Featured"]
+  },
+  {
+    "name": "Sunflowers in Vase on Table",
+    "galleryId": "Watercolors",
+    "imageFiles": ["sunflowers-in-vase-on-table-watercolor.jpg"],
+    "price": 85,
+    "widthInInches": 8.5,
+    "heightInInches": 12.0,
+    "depthInInches": 0,
+    "media": "Watercolor on paper",
+    "tags": ["Featured"]
+  },
+  {
+    "name": "Pink Dahlias In Wide Pot",
+    "galleryId": "Watercolors",
+    "imageFiles": ["orange-dahlias-in-pot-watercolor.jpg"],
+    "price": 85,
+    "widthInInches": 7.25,
+    "heightInInches": 10.25,
+    "depthInInches": 0,
+    "media": "Watercolor on paper",
+    "tags": []
+  },
+  {
+    "name": "Orange Sunflowers In Garden",
+    "galleryId": "Watercolors",
+    "imageFiles": ["orange-sunflowers-in-garden-watercolor.jpg"],
+    "price": 135,
+    "widthInInches": 10.25,
+    "heightInInches": 14.25,
+    "depthInInches": 0,
+    "media": "Watercolor on paper",
+    "tags": ["Featured"]
+  },
+  {
+    "name": "Poppies in the Wild",
+    "galleryId": "Watercolors",
+    "imageFiles": ["poppies-watercolor.jpg"],
+    "price": 135,
+    "widthInInches": 10.25,
+    "heightInInches": 14.25,
+    "depthInInches": 0,
+    "media": "Watercolor on paper",
+    "tags": []
+  },
+  {
+    "name": "Pink and Blue Flowers in Vase",
+    "galleryId": "Watercolors",
+    "imageFiles": ["red-and-blue-flowers-in-purple-vase-watercolor.jpg"],
+    "price": 55,
+    "widthInInches": 6.0,
+    "heightInInches": 8.5,
+    "depthInInches": 0,
+    "media": "Watercolor on paper",
+    "tags": []
+  },
+  {
+    "name": "Red and Blue Flowers in Vase",
+    "galleryId": "Watercolors",
+    "imageFiles": ["red-and-blue-flowers-watercolor.jpg"],
+    "price": 55,
+    "widthInInches": 6.0,
+    "heightInInches": 8.5,
+    "depthInInches": 0,
+    "media": "Watercolor on paper",
+    "tags": ["Vibrant"]
+  },
+  {
+    "name": "Squid and Octopus In Battle of the Deep",
+    "galleryId": "Watercolors",
+    "imageFiles": ["squid-and-octopus-battle-watercolor.jpg"],
+    "price": 65,
+    "widthInInches": 10.25,
+    "heightInInches": 7.0,
+    "depthInInches": 0,
+    "media": "Watercolor on paper",
+    "tags": ["Vibrant", "Creature Feature"]
+  },
+  {
+    "name": "Sunflowers in Gray Pot",
+    "galleryId": "Watercolors",
+    "imageFiles": ["sunflowers-in-pot-watercolor.jpg"],
+    "price": 85,
+    "widthInInches": 7.5,
+    "heightInInches": 11.25,
+    "depthInInches": 0,
+    "media": "Watercolor on paper",
+    "tags": []
+  },
+  {
+    "name": "Yellow Jelly",
+    "galleryId": "Watercolors",
+    "imageFiles": ["yellow-jelly-watercolor.jpg"],
+    "price": 55,
+    "widthInInches": 6.0,
+    "heightInInches": 8.25,
+    "depthInInches": 0,
+    "media": "Watercolor on paper",
+    "tags": ["Creature Feature"]
+  },
+  {
     "name": "Acorn",
     "galleryId": "Ugly_Bugs",
     "imageFiles": ["01Acorn_oil_and_encaustic_Sold.jpg"],
@@ -30,7 +217,7 @@
     "heightInInches": 26,
     "depthInInches": 4,
     "media": "Oil and encaustic on canvas with wood framing",
-    "tags": ["abc", "test", "123"]
+    "tags": ["Flight", "Buzz"]
   },
   {
     "name": "Cicada",
@@ -41,7 +228,7 @@
     "widthInInches": 38,
     "heightInInches": 50,
     "depthInInches": 4,
-    "tags": ["456"]
+    "tags": ["Large"]
   },
   {
     "name": "Butterfly",

@@ -7,6 +7,13 @@
     "extraDescription": "The larger than normal depth creates a sculptural element to the art, and eliminates the need for a traditional frame."
   },
   {
+    "id": "Watercolors",
+    "name": "Watercolors",
+    "imageFile": "sunflowers-in-pot-watercolor.jpg",
+    "description": "Watercolor paintings on paper.",
+    "extraDescription": "Renditions of eye-popping watercolor paintings depicting interesting subjects and artwork."
+  },
+  {
     "id": "Beautiful_Creatures",
     "name": "Beautiful Creatures",
     "imageFile": "01SeaMonster_oil_and_encaustic.jpg",
