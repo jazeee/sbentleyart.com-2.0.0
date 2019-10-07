@@ -26,7 +26,11 @@ export const Layout = ({ children, breadcrumbs = [] }) => {
   return (
     <>
       <Helmet>
-        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet" key="serif-font"/>
+        <link
+          href="https://fonts.googleapis.com/css?family=Merriweather&display=swap"
+          rel="stylesheet"
+          key="serif-font"
+        />
       </Helmet>
       <CssBaseline />
       <MuiThemeProvider theme={theme}>
@@ -42,8 +46,11 @@ export const Layout = ({ children, breadcrumbs = [] }) => {
               reserved. Copyright and reproduction rights are reserved by the
               artist.
               <br />
-              Due to the nature of the art product, all sales are final and
-              non-refundable.
+              Contact Sarah on Facebook for purchase options. Due to the nature
+              of the art product, all sales are final and non-refundable.
+              Pictures on this site may vary from actual artwork. Artist is not
+              responsible for visual differences between images depicted here
+              and the actual art.
             </Typography>
             <br />
             <Typography variant="caption" className={classes.developedBy}>
